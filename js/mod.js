@@ -1,6 +1,6 @@
 var mod = {
-    primaryName: "ω",
-    secondaryName: "Engine",
+    primaryName: "Powering",
+    secondaryName: "Layers",
     version: "1.0.0",
     engineVer: "0.2.3 P1", //DO NOT MODIFY
     debugMode: true,
@@ -13,6 +13,18 @@ var mod = {
         ["eXPerience", "css/themes/experience.css"]
     ],
     layerNames: [
+        ["Powering Legacy",
+        [
+            "&!)(",
+            "!!}|-|",
+            ["<span class='flipped-v'>&</span>", "<span class='flipped-v'>&</span><sup>2</sup>","<span class='flipped-v'>&</span><sup>3</sup>","<span class='flipped-v'>&</span><sup>2<sup>2</sup></sup>"]
+        ]],
+        ["Powering Legacy Classic",
+        [
+            "-><-|}|>?",
+            "!&",
+            ["<span class='flipped-v'>?</span>", "<span class='flipped-v'>?</span><sup>2</sup>","<span class='flipped-v'>?</span><sup>3</sup>","<span class='flipped-v'>?</span><sup>2<sup>2</sup></sup>"]
+        ]],
         ["Ω-Lλγers",
         [
             "αβγδεζηθικλμνξοπρστυφχψωΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ",
