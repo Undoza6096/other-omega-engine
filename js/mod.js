@@ -1,6 +1,6 @@
 var mod = {
-    primaryName: "ω",
-    secondaryName: "Engine",
+    primaryName: "Curze",
+    secondaryName: "Layers",
     version: "1.0.0",
     engineVer: "0.2.3 P1", //DO NOT MODIFY
     debugMode: true,
@@ -13,6 +13,12 @@ var mod = {
         ["eXPerience", "css/themes/experience.css"]
     ],
     layerNames: [
+        ["Curze Layers",
+        [
+            "R&$GC",
+            "<|>",
+            ["<span class='flipped-v'>C</span>", "<span class='flipped-v'>⚠️</span>","ε<sub>0</sub>","ε<sub>1</sub>"]
+        ]],
         ["Ω-Lλγers",
         [
             "αβγδεζηθικλμνξοπρστυφχψωΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ",
