@@ -8,12 +8,12 @@ class ReStackLayer
         this.permUpgrades = {
             prestigeGains: new RestackLayerUpgrade("All Prestige gains are higher",
                 level => this.getPermUpgradeCost(),
-                level => Decimal.pow(128, level), {
-                    maxLevel: 2
+                level => Decimal.pow(1e9, level), {
+                    maxLevel: 100
                 }),
             layerExponentialBoostFactorTime: new RestackLayerUpgrade("The Layer Exponential Factor increases over time",
                 level => this.getPermUpgradeCost(),
-                level => Math.min(1, this.timeSpent / 28800) * 3 * level.toNumber(), {
+                level => Math.min(1, this.timeSpent / 28800) * 36 * level.toNumber(), {
                     maxLevel: 2,
                     getEffectDisplay: effectDisplayTemplates.numberStandard(4, "+")
                 }),
@@ -44,15 +44,15 @@ class ReStackLayer
         };
         this.metaUpgrade = new RestackLayerUpgrade("All your Layer Resources are multiplied each second",
             level => new Decimal(1e10).pow(level.add("1").mul(level.add("1"))),
-            level => 1 + 0.3 * level.toNumber(),{
-                maxLevel: 5,
+            level => 1 + 1.5 * level.toNumber(),{
+                maxLevel: 50,
             });
         this.upgradeTree = [
             [
                 new RestackLayerUpgrade("Increase the Resource Multiplier",
                     level => new Decimal(1e24),
-                    level => Decimal.pow(2, level),{
-                        maxLevel: 1,
+                    level => Decimal.pow(3, level),{
+                        maxLevel: 20,
                         getEffectDisplay: effectDisplayTemplates.numberStandard(0, "^")
                     })
             ],
@@ -60,13 +60,13 @@ class ReStackLayer
                 new RestackLayerUpgrade("Resource Multipliers are stronger",
                     level => new Decimal(1e50),
                     level => Decimal.pow(4, level),{
-                        maxLevel: 1,
+                        maxLevel: 30,
                         getEffectDisplay: effectDisplayTemplates.numberStandard(2, "^")
                     }),
                 new RestackLayerUpgrade("Resource Multiplier Upgrades are stronger based on time spent this ReStack",
                 level => new Decimal(1e50),
-                level => new Decimal(1).add(Decimal.pow(2, level).sub(1).mul(this.timeSpent / 1000)),{
-                        maxLevel: 1,
+                level => new Decimal(1).add(Decimal.pow(2, level).sub(1).mul(this.timeSpent / 100)),{
+                        maxLevel: 10,
                         getEffectDisplay: effectDisplayTemplates.numberStandard(2, "^")
                     })
             ],
@@ -153,6 +153,15 @@ class ReStackLayer
                             return this.level.gt(0) ? "Doesn't reset" : "Resets";
                         }
                     }),
+                    new RestackLayerUpgrade("Template",
+                    level => new Decimal("1ee10000"),
+                    level => level.gt(0), {
+                        maxLevel: 1,
+                        getEffectDisplay: function()
+                        {
+                            return this.level.gt(0) ? "Doesn't reset" : "Resets";
+                        }
+                    }),
             ]
         ];
         this.upgradeTree[1][0].setRequirements([this.upgradeTree[0][0]], [this.upgradeTree[1][1]]);
@@ -167,6 +176,7 @@ class ReStackLayer
         this.upgradeTree[7][0].setRequirements([this.upgradeTree[6][0]], [this.upgradeTree[7][1]]);
         this.upgradeTree[7][1].setRequirements([this.upgradeTree[6][0]], [this.upgradeTree[7][0]]);
         this.upgradeTree[8][0].setRequirements([this.upgradeTree[7][0], this.upgradeTree[7][1]], []);
+        this.upgradeTree[8][1].setRequirements([this.upgradeTree[7][0], this.upgradeTree[7][1]], []);
         this.upgradeTreeNames = {
             resourceMultiplier: this.upgradeTree[0][0],
             resourceMultiplierUpgrades: this.upgradeTree[1][0],
@@ -180,7 +190,8 @@ class ReStackLayer
             noReset: this.upgradeTree[6][0],
             template1: this.upgradeTree[7][0],
             template2: this.upgradeTree[7][1],
-            template3: this.upgradeTree[8][0]
+            template3: this.upgradeTree[8][0],
+            template4: this.upgradeTree[8][1]
         };
     }
 

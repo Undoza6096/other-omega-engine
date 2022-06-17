@@ -13,6 +13,12 @@ var mod = {
         ["eXPerience", "css/themes/experience.css"]
     ],
     layerNames: [
+        ["Terra Layers",
+        [
+            "αβγδεζηθικλμνξοπρστυφχψωΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩabc",
+            "ψϝϛͱϻϙͳϸabcdefg",
+            ["<span class='flipped-v'>Ω</span>", "<span class='flipped-v'>Ω</span><sup>2</sup>","<span class='flipped-v'>Ω</span><sup>3</sup>","<span class='flipped-v'>Ω</span><sup>2<sup>2</sup></sup>"]
+        ]],
         ["Ω-Lλγers",
         [
             "αβγδεζηθικλμνξοπρστυφχψωΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ",
@@ -45,12 +51,12 @@ var mod = {
         ]]
     ],
     fonts: [
-        ["Monospace Typewriter", "css/fonts/typespace.css"],
-        ["Comic Sans", "css/fonts/comic.css"],
-        ["Arial", "css/fonts/arial.css"],
-        ["Roboto", "css/fonts/roboto.css"],
-        ["Comfortaa", "css/fonts/comfortaa.css"],
-        ["Minecraft", "css/fonts/minecraft.css"],
+        ["tertate of mono", "css/fonts/typespace.css"],
+        ["sansing", "css/fonts/comic.css"],
+        ["artial", "css/fonts/arial.css"],
+        ["robot", "css/fonts/roboto.css"],
+        ["Comforta", "css/fonts/comfortaa.css"],
+        ["mine", "css/fonts/minecraft.css"],
     ],
     saves: [
         ["Save 1", ""],

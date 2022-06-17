@@ -29,7 +29,7 @@ Vue.component("aleph-layer", {
         <p>Your highest Layer is <resource-name :layerid="highestLayer()"></resource-name>, translated to a x{{formatNumber(aleph.getAlephBoostFromLayer(), 2, 2)}} Boost on <span class="aleph">ℵ</span> gain</p>
     </div>
     <div v-else>
-        <p>You need to go <resource-name :layerid="3"></resource-name> at least once to get <span class="aleph">ℵ</span></p>
+        <p>You need to go cant resource <resource-name :layerid="3"></resource-name> at least once to get <span class="aleph">ℵ</span></p>
     </div>
 </div>
 <div class="tabs">

@@ -4,7 +4,7 @@ class AlephLayer
     {
         this.aleph = new Decimal(0);
         this.upgrades = {
-            alephGain: new AlephUpgrade("Increase your aleph gain", level => Decimal.pow(1.215, level).mul(100),
+            alephGain: new AlephUpgrade("Increase your aleph gain", level => Decimal.pow(1.42, level).mul(100),
                 level => Decimal.pow(1.2 + game.restackLayer.permUpgrades.aleph.apply(), level)),
             alephGainBonus: new AlephUpgrade("Get a Bonus to aleph gain",
                 level => Utils.createValueDilation(Decimal.pow(1000, level).mul(1000), 0.02),
@@ -32,8 +32,8 @@ class AlephLayer
                 level => game.layers[0] ? Decimal.pow(new Decimal(1.1).add(level.mul(0.1)), Decimal.max(0, game.layers[0].resource).add(1).log10().add(1).log10()) : new Decimal(1)),
             betterBetaFormula: new AlephUpgrade("The &beta; Prestige Formula is better",
                 level => new Decimal(1e90),
-                level => new Decimal(1).add(level.mul(0.12)), {
-                    maxLevel: 1,
+                level => new Decimal(1).add(level.mul(1.5)), {
+                    maxLevel: 10,
                     getEffectDisplay: effectDisplayTemplates.numberStandard(2, "^")
                 }),
             prestigeRewards: new AlephUpgrade("Increase the Prestige Reward of all Layers",
