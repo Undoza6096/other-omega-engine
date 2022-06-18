@@ -5,33 +5,63 @@ var mod = {
     engineVer: "0.2.3 P1", //DO NOT MODIFY
     debugMode: true,
     themes: [
-        ["Dark", "css/themes/dark.css"],
-        ["Light (Legacy)", "https://veprogames.github.io/omega-layers/css/main.css"],
-        ["Neon", "css/themes/neon.css"],
-        ["Godot Blue", "css/themes/darkblue.css"],
-        ["Halloween", "css/themes/spooky.css"],
-        ["eXPerience", "css/themes/experience.css"]
+        ["my dark", "css/themes/dark.css"],
+        ["light", "https://veprogames.github.io/omega-layers/css/main.css"],
+        ["naon", "css/themes/neon.css"],
+        ["goto blue", "css/themes/darkblue.css"],
+        ["Helloween", "css/themes/spooky.css"],
+        ["x_x", "css/themes/experience.css"]
     ],
     layerNames: [
-        ["Ω-Lλγers",
+        ["gemotry",
+        [
+            "|_|",
+            "/_/",
+            "_/\_"
+        ]],
+        ["Aleph Simulator calssic",
+        [
+            "aleph",
+            "sim",
+            "clas"
+        ]],
+        ["dismey",
+        [
+            "Disneyendlessgostup",
+            "While",
+            "????"
+        ]],
+        ["legacy",
+        [
+            "????????????????????????????",
+            "???????????????",
+            "????"
+        ]],
+        ["age",
+        [
+            "age",
+            "ψϝϛͱϻϙͳϸ",
+            ["<span class='flipped-v'>Ω</span>", "<span class='flipped-v'>Ω</span><sup>2</sup>","<span class='flipped-v'>Ω</span><sup>3</sup>","<span class='flipped-v'>Ω</span><sup>2<sup>2</sup></sup>"]
+        ]],
+        ["dude",
         [
             "αβγδεζηθικλμνξοπρστυφχψωΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ",
             "ψϝϛͱϻϙͳϸ",
             ["<span class='flipped-v'>Ω</span>", "<span class='flipped-v'>Ω</span><sup>2</sup>","<span class='flipped-v'>Ω</span><sup>3</sup>","<span class='flipped-v'>Ω</span><sup>2<sup>2</sup></sup>"]
         ]],
-        ["Alphabet",
+        ["Alpha",
         [
             "abcdefghijklmnopqrstuvwxyz",
             "123456789",
             "ABCD"
         ]],
-        ["Symbols",
+        ["arts",
         [
             '!"£$%^&*;:@',
             "<,[{}].>",
             "+×÷^"
         ]],
-        ["Binary",
+        ["zero one two three four five",
         [
             '01',
             "01",
@@ -45,18 +75,18 @@ var mod = {
         ]]
     ],
     fonts: [
-        ["Monospace Typewriter", "css/fonts/typespace.css"],
-        ["Comic Sans", "css/fonts/comic.css"],
-        ["Arial", "css/fonts/arial.css"],
-        ["Roboto", "css/fonts/roboto.css"],
-        ["Comfortaa", "css/fonts/comfortaa.css"],
-        ["Minecraft", "css/fonts/minecraft.css"],
+        ["mono", "css/fonts/typespace.css"],
+        ["sins", "css/fonts/comic.css"],
+        ["artial", "css/fonts/arial.css"],
+        ["robot", "css/fonts/roboto.css"],
+        ["Comfortza", "css/fonts/comfortaa.css"],
+        ["mine", "css/fonts/minecraft.css"],
     ],
     saves: [
-        ["Save 1", ""],
-        ["Save 2", "2"],
-        ["Save 3", "3"],
-        ["Save 4", "4"],
+        ["idk save", ""],
+        ["fill save", "2"],
+        ["text art save", "3"],
+        ["gg save", "4"],
     ],
     debugClasses: []
 }
