@@ -1,6 +1,6 @@
 var mod = {
-    primaryName: "ω",
-    secondaryName: "Engine",
+    primaryName: "Aleph",
+    secondaryName: "Sim",
     version: "1.0.0",
     engineVer: "0.2.3 P1", //DO NOT MODIFY
     debugMode: true,
@@ -17,7 +17,7 @@ var mod = {
         [
             "|_|",
             "/_/",
-            "_/\_"
+            "_/|_"
         ]],
         ["Aleph Simulator calssic",
         [
