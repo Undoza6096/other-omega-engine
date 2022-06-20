@@ -16,8 +16,8 @@ class AlephLayer
                 level => new Decimal(1).add(Decimal.max(0, game.alephLayer.aleph).add(1).log10().mul(level).mul(0.05)).pow(2.5)),
             deltaBoost: new AlephUpgrade("Gain more &delta;",
                 level => Decimal.pow(1e5, level).mul(1e3),
-                level => Decimal.pow(10, level), {
-                    maxLevel: 4
+                level => Decimal.pow(1000, level), {
+                    maxLevel: 5000
                 }),
             powerGenerators: new AlephUpgrade("All Power Generators on every Layer are stronger",
                 level => Utils.createValueDilation(Decimal.pow(1e5, Decimal.pow(level, 1.5)).mul(1e20), 0.001),
@@ -38,7 +38,7 @@ class AlephLayer
                 }),
             prestigeRewards: new AlephUpgrade("Increase the Prestige Reward of all Layers",
                 level => Utils.createValueDilation(Decimal.pow(1e30, level).mul(1e100), 0.005, new Decimal("1e650")),
-                level => Decimal.pow(1.6, level)),
+                level => Decimal.pow(10, level)),
             layerExponentialBoost: new AlephUpgrade("Increase the exponential difference of boosts between layers, resulting in a large boost!",
                 level => level.lt(2) ? new Decimal([1e125, 1e210][level.toNumber()]) : Decimal.dInf,
                 level => [22, 25, 27][level.toNumber()], {
