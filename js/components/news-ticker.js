@@ -3,16 +3,16 @@ Vue.component("news-ticker", {
     {
         return {
             messages: [
-                "modding.net",
-                "layer name moment",
-                "weird themes",
-                "hey, you could make a mod out of this",
-                "when the imp- oh wrong mod",
-                "basically there is a thi- (softcapped)",
-                "incremental thing i guess",
-                "omega layers but steam engine",
-                "mod.js: powering layers",
-                "i ran out of words on my hard drive :("
+                "yes",
+                "yes of do",
+                "log<sub>10</sub>(9)",
+                "see",
+                "go find",
+                "when",
+                "gaming now",
+                "omega layers know iding webl group:)",
+                "|3",
+                "you these?"
             ],
             currentMessage: "",
             messageIndex: -1
