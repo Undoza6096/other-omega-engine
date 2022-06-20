@@ -22,7 +22,11 @@ class MetaLayer
             new MetaDynamicLayerUpgrade("Increase the Resource Multiplier",
                 level => Utils.createValueDilation(level.mul(48).mul(Decimal.pow(1.1, Decimal.max(0, level.sub(15)))), 0.001).floor().add(143),
                 level => new Decimal(1),
-                level => Decimal.pow(4, level.pow(game.restackLayer.upgradeTreeNames.resourceMultipliersLevelScaling.apply())).pow(this.getResourceMultiplierBoost()))
+                level => Decimal.pow(4, level.pow(game.restackLayer.upgradeTreeNames.resourceMultipliersLevelScaling.apply())).pow(this.getResourceMultiplierBoost())),
+            new MetaDynamicLayerUpgrade("Increase the Resource Multiplier",
+                level => Utils.createValueDilation(level.mul(48).mul(Decimal.pow(1.1, Decimal.max(0, level.sub(15)))), 0.001).floor().add(480),
+                level => new Decimal(1),
+                level => Decimal.pow(2048, level.pow(game.restackLayer.upgradeTreeNames.resourceMultipliersLevelScaling.apply())).pow(this.getResourceMultiplierBoost()))
         ];
 
         this.powerUpgrades = [
@@ -48,6 +52,12 @@ class MetaLayer
                 level => Utils.createValueDilation(level.mul(2e12).mul(Decimal.pow(10, Decimal.max(0, level.sub(1)))), 0.001).floor().add(1e12),
                 level => new Decimal(1),
                 level => Decimal.pow(1.09, level).pow(this.getResourcePowererBoost()).mul(game.restackLayer.upgradeTreeNames.resourcePowerersStrength.apply()), {
+                    getEffectDisplay: effectDisplayTemplates.numberStandard(2, "^")
+                }),
+            new MetaDynamicLayerUpgrade("Increase the Resource Power",
+                level => Utils.createValueDilation(level.mul(2e12).mul(Decimal.pow(10, Decimal.max(0, level.sub(1)))), 0.001).floor().add(1e12),
+                level => new Decimal(1),
+                level => Decimal.pow(1.11, level).pow(this.getResourcePowererBoost()).mul(game.restackLayer.upgradeTreeNames.resourcePowerersStrength.apply()), {
                     getEffectDisplay: effectDisplayTemplates.numberStandard(2, "^")
                 })
         ];
