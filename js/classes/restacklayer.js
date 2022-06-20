@@ -49,15 +49,15 @@ class ReStackLayer
             });
         this.upgradeTree = [
             [
-                new RestackLayerUpgrade("Increase the Resource Multiplier",
+                new RestackLayerUpgrade("Webl groups of Increase the Resource Multiplier",
                     level => new Decimal(1e24),
-                    level => Decimal.pow(2, level),{
-                        maxLevel: 1,
+                    level => Decimal.pow(15, level),{
+                        maxLevel: 2,
                         getEffectDisplay: effectDisplayTemplates.numberStandard(0, "^")
                     })
             ],
             [
-                new RestackLayerUpgrade("Resource Multipliers are stronger",
+                new RestackLayerUpgrade("Resource Multipliering are stronger",
                     level => new Decimal(1e50),
                     level => Decimal.pow(4, level),{
                         maxLevel: 1,
@@ -66,7 +66,7 @@ class ReStackLayer
                 new RestackLayerUpgrade("Resource Multiplier Upgrades are stronger based on time spent this ReStack",
                 level => new Decimal(1e50),
                 level => new Decimal(1).add(Decimal.pow(2, level).sub(1).mul(this.timeSpent / 1000)),{
-                        maxLevel: 1,
+                        maxLevel: 5,
                         getEffectDisplay: effectDisplayTemplates.numberStandard(2, "^")
                     })
             ],
@@ -109,8 +109,8 @@ class ReStackLayer
             [
                 new RestackLayerUpgrade("Resource Powerers are stronger",
                     level => new Decimal("1ee10"),
-                    level => new Decimal(1).add(level), {
-                        maxLevel: 1
+                    level => Decimal.pow(3, level), {
+                        maxLevel: 69420
                     }),
                 new RestackLayerUpgrade("Resource Multipliers scale better to their level",
                     level => new Decimal("1ee10"),
@@ -144,8 +144,8 @@ class ReStackLayer
                     }),
             ],
             [
-                new RestackLayerUpgrade("Template",
-                    level => new Decimal("1ee1000"),
+                new RestackLayerUpgrade("Webl Groups I Tired",
+                    level => new Decimal("1ee2000"),
                     level => level.gt(0), {
                         maxLevel: 1,
                         getEffectDisplay: function()
