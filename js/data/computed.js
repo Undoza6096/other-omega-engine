@@ -22,6 +22,7 @@ const computed = {
             case "Guide":
             case "Changelog":
             case "Engine Changelog":
+            case "Guide Idle":
                 category = "Guide";
                 break;
             case "Achievements":
