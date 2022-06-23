@@ -44,7 +44,7 @@ class ReStackLayer
         };
         this.metaUpgrade = new RestackLayerUpgrade("All your Layer Resources are multiplied each second",
             level => new Decimal(1e10).pow(level.add("1").mul(level.add("1"))),
-            level => 1 + 0.3 * level.toNumber(),{
+            level => 1e20 + 3e19 * level.toNumber(),{
                 maxLevel: 5,
             });
         this.upgradeTree = [
