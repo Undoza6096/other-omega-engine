@@ -123,7 +123,7 @@ class ReStackLayer
                 new RestackLayerUpgrade("Time since ReStack no longer resets",
                     level => new Decimal("1ee100"),
                     level => level.gt(0), {
-                        maxLevel: 1,
+                        maxLevel: 2,
                         getEffectDisplay: function()
                         {
                             return this.level.gt(0) ? "Doesn't reset" : "Resets";

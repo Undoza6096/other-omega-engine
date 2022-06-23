@@ -165,7 +165,7 @@
 
 <script src="js/main.js"></script>
 <script>
-    var endgameReq = game.metaLayer.layer.gte(Infinities[0])
+    var endgameReq = game.metaLayer.layer.gte("1e34")
     setInterval(function() {
         if (endgameReq && !temp.endgameOverride) {
             game.settings.tab = "Endgame"

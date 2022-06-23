@@ -35,6 +35,14 @@ class MetaLayer
                 level => Utils.createValueDilation(level.mul(7e18).mul(Decimal.pow(1.1, Decimal.max(0, level.sub(15)))), 0.001).floor().add(2e19),
                 level => new Decimal(1),
                 level => Decimal.pow("e4e16", level.pow(game.restackLayer.upgradeTreeNames.resourceMultipliersLevelScaling.apply())).pow(this.getResourceMultiplierBoost())),
+            new MetaDynamicLayerUpgrade("Towers",
+                level => Utils.createValueDilation(level.mul(2e25).mul(Decimal.pow(1.1, Decimal.max(0, level.sub(15)))), 0.001).floor().add(5e25),
+                level => new Decimal(1),
+                level => Decimal.pow("e3e22", level.pow(game.restackLayer.upgradeTreeNames.resourceMultipliersLevelScaling.apply())).pow(this.getResourceMultiplierBoost())),
+            new MetaDynamicLayerUpgrade("Duna Towers",
+                level => Utils.createValueDilation(level.mul(1e31).mul(Decimal.pow(1.1, Decimal.max(0, level.sub(15)))), 0.001).floor().add(5e31),
+                level => new Decimal(1),
+                level => Decimal.pow("e2e29", level.pow(game.restackLayer.upgradeTreeNames.resourceMultipliersLevelScaling.apply())).pow(this.getResourceMultiplierBoost())),
         ];
 
         this.powerUpgrades = [
