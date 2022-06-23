@@ -1,0 +1,8 @@
+@font-face{
+    font-family: Unicod;
+    src: url('../../fonts/UNicod\ Sans\ Medium.ttf');
+}
+
+:root{
+    --primary-font: Unicod
+}

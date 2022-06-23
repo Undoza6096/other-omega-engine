@@ -13,31 +13,31 @@ var mod = {
         ["eXPerience", "css/themes/experience.css"]
     ],
     layerNames: [
-        ["Ω-Lλγers",
+        ["w-lyvers",
         [
             "αβγδεζηθικλμνξοπρστυφχψωΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ",
             "ψϝϛͱϻϙͳϸ",
             ["<span class='flipped-v'>Ω</span>", "<span class='flipped-v'>Ω</span><sup>2</sup>","<span class='flipped-v'>Ω</span><sup>3</sup>","<span class='flipped-v'>Ω</span><sup>2<sup>2</sup></sup>"]
         ]],
-        ["Alphabet",
+        ["🥰",
         [
             "abcdefghijklmnopqrstuvwxyz",
             "123456789",
             "ABCD"
         ]],
-        ["Symbols",
+        ["Terminusfinity",
         [
             '!"£$%^&*;:@',
             "<,[{}].>",
             "+×÷^"
         ]],
-        ["Binary",
+        ["U+282F",
         [
             '01',
             "01",
             "2345"
         ]],
-        ["Random",
+        ["░",
         [
             Utils.createRandomWord(10, new Random(Date.now()).nextInt()),
             Utils.createRandomWord(10, new Random(Math.floor(Date.now()/2)).nextInt()),
@@ -45,19 +45,20 @@ var mod = {
         ]]
     ],
     fonts: [
-        ["Monospace Typewriter", "css/fonts/typespace.css"],
-        ["Comic Sans", "css/fonts/comic.css"],
-        ["Arial", "css/fonts/arial.css"],
-        ["Roboto", "css/fonts/roboto.css"],
-        ["Comfortaa", "css/fonts/comfortaa.css"],
-        ["Minecraft", "css/fonts/minecraft.css"],
+        ["mono", "css/fonts/typespace.css"],
+        ["snas", "css/fonts/comic.css"],
+        ["U+2815?", "css/fonts/arial.css"],
+        ["reboto", "css/fonts/roboto.css"],
+        ["comfinza", "css/fonts/comfortaa.css"],
+        ["mien", "css/fonts/minecraft.css"],
+        ["unicode", "css/fonts/unicod.css"],
     ],
     saves: [
-        ["Save 1", ""],
-        ["Save 2", "2"],
-        ["Save 3", "3"],
-        ["Save 4", "4"],
-        ["Save 5", "5"],
+        ["Exponential idle", ""],
+        ["ghost", "2"],
+        ["Universe size compraision", "3"],
+        ["text art", "4"],
+        ["ascii persent", "5"],
     ],
     debugClasses: []
 }
