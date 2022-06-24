@@ -1,5 +1,5 @@
 var mod = {
-    primaryName: "ω",
+    primaryName: "ω3",
     secondaryName: "Engine",
     version: "1.0.0",
     engineVer: "0.2.3 P1", //DO NOT MODIFY
